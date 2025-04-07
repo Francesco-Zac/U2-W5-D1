@@ -36,7 +36,7 @@ header nav ul {
   margin: 0;
 }
 header nav li {
-  list-style: none;
+  display: inline-block;
 }
 header nav li a {
   color: white;
@@ -56,6 +56,14 @@ main {
   padding: 2em 1em;
   margin-bottom: 1.5em;
 }
+
+main img {
+  box-shadow: 0 0 0 3px rgb(24, 127, 244), 0 0 0 6px rgb(138, 3, 145);
+  padding: 2px;
+  margin-bottom: 0.5em;
+  margin-left: 6px;
+}
+
 section {
   background-color: #e3e3e3;
   padding: 1em;
@@ -64,6 +72,7 @@ section {
 section h2 {
   text-align: center;
   color: #333;
+  background-color: #9f9f9f;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -72,7 +81,8 @@ section h2 {
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 h1 {
-  font-size: 2.6rem;
+  max-width: 400px;
+  font-size: 3.6rem;
   font-weight: bold;
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
@@ -196,30 +206,23 @@ footer a {
     margin-left: auto;
     margin-right: auto;
   }
-  link {
-    color: #a02571;
+  p,
+  main li {
+    font-size: 20px;
   }
-  section h2 {
-    background-color: #9f9f9f;
-    font-size: xx-large;
-  }
-  section {
-    padding: 4rem;
-  }
-  section p {
-    font-size: x-large;
-  }
-  section input {
-    width: 32em;
-    height: 3em;
+
+  #user_email {
+    width: 60rem;
+    height: 4rem;
   }
   section button {
-    width: 7em;
-    height: 3em;
+    width: 10rem;
+    height: 4rem;
   }
-  nav li,
-  nav {
-    display: inline-block;
+
+  aside h2 {
+    margin-top: 3rem;
+    font-size: 3rem;
   }
 }
 
@@ -227,70 +230,73 @@ footer a {
   header {
     max-width: 100%;
     font-size: 0px;
-    margin-bottom: 25px;
+    padding: 1rem 4rem 1rem 4rem;
+    margin-bottom: 2rem;
   }
   header div,
   header nav {
+    width: 50%;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+  }
+
+  header div img,
+  header div p {
     display: inline-block;
     vertical-align: middle;
-    font-size: 16px; /* Ripristina il font-size per i contenuti */
-    padding: 16px;
+    margin-bottom: 0px;
+    font-size: 17px;
   }
   header div {
-    width: 50%;
-    text-align: left;
+    text-align: start;
   }
   header nav {
-    width: 50%;
-    text-align: right;
+    text-align: end;
   }
-  header img,
-  header p {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+
+  h1 {
+    max-width: 100%;
+    font-size: 60px;
+  }
+
+  table {
+    width: 70%;
   }
 
   iframe {
     display: inline-block;
-    width: 49%;
-    height: 40rem;
+    width: 50%;
+    height: 30rem;
+    margin-bottom: 0px;
   }
   section {
     display: inline-block;
-    width: 49%;
-    height: 40rem;
+    font-size: xx-large;
+    width: 50%;
+    height: 30rem;
+    margin-left: -4px;
+    margin-bottom: 0px;
     vertical-align: top;
-    display: inline-block;
     border-radius: 15px;
   }
 
-  section input {
-    width: 32em;
-    height: 3em;
+  #user_email {
+    width: 400px;
   }
 
-  section h2 {
-    background-color: #9f9f9f;
-  }
-
-  section p {
-    display: inline-block;
-    font-size: x-large;
-    margin-bottom: 20%;
-  }
-  section span {
-    display: inline-block;
-    margin-top: auto;
-    margin-bottom: auto;
-    display: block;
-  }
   section button {
-    width: 7em;
-    height: 3em;
+    width: 9rem;
   }
+
+  aside h2 {
+    margin-top: 3rem;
+    font-size: 3rem;
+  }
+
   aside div {
     display: inline-block;
-    width: 33.1%;
+    width: 33.333%;
+    margin-left: -4px;
   }
 }
